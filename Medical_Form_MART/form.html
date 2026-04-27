@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Medical Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="form_functions.js"></script>
+</head>
+<body class="p-2 gap-5 bg-neutral-400">
+    <div class="bg-grey flex flex-row text-center justify-center align-center gap-20 m-5">
+        <a href="https://medicalartcenter.com/">
+        <img src="OIP (1).jpg" class="align-center justify-center rounded"></a>
+        <p class="text-center text-4xl text-white justify-center align-center">MEDICAL FORM</p>
+    </div>
+    
+
+
+    <form action="form.php" method="post" class=" bg-white m-5 p-5 text-center gap-5 rounded " id="Pt_info">
+        <section id="Personal Info" class="my-5">
+            <a href="Index.html" class=" text-blue-500 "> <- Back</a>
+            <p class="text-center text-4xl p-2">Personal Information</p>
+            <div class="grid grid-cols-2 p-2 align-center">
+                <div>
+                <p>First Name</p>
+                <input type="text" class="shadow bg-grey m-3 border-2 border-black rounded p-2" id="first_n">
+                </div>
+                
+
+                <div>
+                <p>Last Name</p>
+                <input type="text" class="shadow bg-grey m-3 border-2 border-black rounded p-2 " id="last_n">
+                </div>
+                
+            </div>
+
+            <div class="grid grid-cols-2">
+            <div class="flex flex-col gap-4 p-10">
+                        <p>Gender</p>
+                        <div class="flex flex-row gap-4 justify-center">
+                            <select class="p-2 rounded border-2 border-black" id="gender">
+                                <option></option>
+                                <option>Female</option>
+                                <option>Male</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="p-10 gap-4">
+                        <p>Date of Birth</p>
+                        <input type="date" class="shadow bg-grey p-3 border-2 border-black" id="DOB">
+                    </div>
+            </div>
+            
+        <div class="gap-6">
+            <p class="text-3xl">Contact</p>
+            <div class="flex flex-row justify-center gap-5 m-4">
+                
+                    <p>Phone-Number</p>
+                    <input type="tel" placeholder="Phone-Number" class="shadow rounded border-2 border-black p-2 " id="phone">
+                
+                    <p>Email</p>
+                    <input type="email" placeholder="Email" class="shadow rounded border-2 border-black p-2 " id="email">
+            
+            </div>
+            <div class="flex flex-row gap-10 justify-center m-4">
+                <p>Address</p>
+                <textarea class="shadow bg-grey m-3 border-2 border-black rounded p-2 " placeholder="Address" id="address"></textarea>
+            </div>
+        </div>
+
+        </section>
+
+            <section id="Health_Info" class="my-5">
+                <p class="text-center text-4xl">Bio Data</p>
+                
+                <div class="grid grid-cols-2 gap-4 justify-center m-2">
+
+                    <div>
+                    <p>Height</p>
+                    <input type="number" class="shadow bg-grey m-3 border-2 border-black rounded p-2" id="height">
+                    <label>m2</label>
+                    </div>
+
+                    <div>
+                    <p>Weight</p>
+                    <input type="number" class="shadow bg-grey m-3 border-2 border-black rounded p-2" id="weight">
+                    <label>kg</label>
+                    </div>
+                </div> 
+                
+                 <p>Please refer to the scales for the most accurate report.</p>
+
+                <div class="grid grid-cols-2 gap-4 justify-center m-2">
+                    <div class="m-2">
+                        <label>Genotype</label>
+                        <select class="shadow bg-grey m-3 border-2 border-black rounded p-2" id="genotype">
+                            <option></option>
+                            <option>Unknown</option>
+                            <option>AA</option>
+                            <option>AS</option>
+                            <option>SS</option>
+                            <option>SC</option>
+                        </select>
+                    </div>
+
+                    <div class="m-2">
+                        <label>Blood Group</label>
+                        <select class="shadow bg-grey m-3 border-2 border-black rounded p-2" id="blood_group">
+                            <option></option>
+                            <option>Unknown</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </div>
+                    
+                </div>
+               
+            </section>
+
+                <section class="my-5">
+                <div class="p-5">
+                    <p class="text-center text-2xl">Known Health Conditions</p>
+                    <p>Are there any health conditions we should know about.</p>
+                    <textarea class="shadow rounded p-3 border-2 border-black rounded p-2" id="health_con"></textarea>
+                </div>
+
+                <div class="p-5">
+                    <p class="text-center text-4xl bold">Hobbies</p>
+                    <p>What have you been up to lately.</p>
+                <div class="grid grid-cols-3 p-2 gap-4">
+                       <div>
+                        <input type="checkbox" id="smoke">
+                       <label>Smoke</label> </div>
+
+                    <div>
+                        <input type="checkbox" id="drink">
+                       <label>Drink</label> </div>
+
+                    <div>
+                        <input type="checkbox" id="excercise">
+                       <label>Regular Excercise</label> </div>
+                    <div>
+                        <input type="checkbox" id="detox">
+                       <label>Detox</label> </div>
+                    <div>
+                        <input type="checkbox" id="therapy">
+                       <label>Therapy</label> </div>  
+                    <div>
+                        <input type="checkbox" id="meditaion">
+                       <label>Meditaion</label> </div>  
+                </div>
+                    <p>Other</p>
+                    <textarea class="shadow bg-grey m-3 border-2 border-black rounded p-2" id="other_hobbies"></textarea>
+                </div>      
+                </section>
+            
+
+        
+        
+        <section id="Visit Info" class="my-5 justify-center">
+            
+            <p class="text-center text-4xl bold">Reason For Visit</p>
+            <p>What are you here for today.</p>
+        <div class="grid grid-cols-3 p-2 gap-4">
+
+            <div>
+                <input type="checkbox" id="test"> <label>Test</label>
+            </div>
+            <div>
+                <input type="checkbox" id="consult"> <label>Consultaion</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ar_tech"> <label>Assisted Reproductive Treatment</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pg_testing"> <label>Pre-implantaion gene testing(PGT)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="donation"> <label>Donation</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hormone_man"> <label>Hormone Management</label>
+            </div>
+
+        </div>
+
+            <p>Other</p>
+            <textarea class="shadow bg-grey m-3 rounded border-2 border-black" id="other_tre"></textarea>
+
+            <p>Have you undergone any previous treatment</p>
+            <select class="shadow rounded" name="prev-treat">
+                <option></option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            
+        </section>
+
+        <section id="Emergency Contact" class="my-5">
+        <div class="p-5">
+            <p class="text-4xl p-4">Emergency Contact</p>
+            <p class="text-2xl ">Contact 1</p>
+            <div class="grid grid-cols-4 justify-center gap-4">
+                <p>First Name</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_first_name_1"></textarea>
+                <p>Last Name</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_last_name_1"></textarea>
+                <p>Relationship</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_relation_1"></textarea>
+                <p>Address</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_address_1"></textarea>
+                <p>Phone-Number</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_number_1"></textarea>
+                <p>Email</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_email_1"></textarea>
+            </div>
+        </div>  
+        
+        <div class="p-5">
+            <p class="text-2xl">Contact 2</p>
+            <div class="grid grid-cols-4 justify-center gap-4">
+                <p>First Name</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_first_name_2"></textarea>
+                <p>Last Name</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E_last_name_2"></textarea>
+                <p>Relationship</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E-relation-2"></textarea>
+                <p>Address</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E-address-2"></textarea>
+                <p>Phone-Number</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E-number-2"></textarea>
+                <p>Email</p>
+                <textarea class="border-2 border-black rounded p-2 shadow" id="E-email-2"></textarea>
+            </div>
+        </div>
+        </section>
+        
+        <p>Thank you for your time</p>
+
+        <a href="Survey.html">
+        <input type="submit" id="submitBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        </a>
+    </form>
+    <script src="form_functions.js"></script>
+</body>
+</html>
